@@ -1,15 +1,45 @@
 
 var b = 2;
+
 function ex1(){
-  a=b++;
-  return result;
+  alert("a = " + (a=b++));
+  alert("b=2");
 }
-a=++b;
-a=b--;
-a=--b;
-a+=b++;
-a=1; a+=++b;
-a=1; a-=b++;
-a=1; a-=++b;
-a=1; a+=b--;
-a=1; a+=--b;
+function ex2(){
+  alert("a = " + (a=++b));
+  alert("b=2");
+}
+function ex3(){
+  alert("a = " + (a=b--));
+  alert("b=2");
+}
+function ex4(){
+  alert("a = " + (a=--b));
+  alert("b=2");
+}
+function ex5(){
+  alert("a = " + (a+=b++));
+  alert("b=2");
+}
+function ex6(){
+  alert("a = " + (a=1; a+=++b));
+  alert("b=2");
+}
+function ex7(){
+  alert("a = " + (a=1; a-=b++));
+  alert("b=2");
+}
+function ex8(){
+  alert("a = " + (a=1; a-=++b));
+  alert("b=2");
+}
+function ex9(){
+  alert("a = " + (a=1; a+=b--));
+  alert("b=2");
+
+}
+function ex10(){
+  alert("a = " + (a=1; a+=--b));
+  alert("b=2");
+
+}
